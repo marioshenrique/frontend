@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Imagens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon-flamengo-50.png" type="image/png">
+</head>
+<body>
+    <h1>Adicionar Imagens ao HTML</h1>
+    <p>Adicionar imagens a umam página HTML é um dos elementos essenciair para criar uma interface visualmente atraente. Isso é feito usando a tag img, que é uma tag autocontida e permite a inserção de imagens de diferentes formatos em seu site. A seguir, explicamos como utilizar essa tag e seus principaus atributos.</p>
+    <h2>Sintaxe Básica da Tag &ltimg&gt</h2>
+    <p>Abaixo temos uma imagem para ilustrar a forma mais básica de adicionar uma imagem em um arquivo HTML.</p>
+    <img id="img1" src="imagens/fotografia-cachorro-loki-500.jpg" alt="Imagem do cachorro Loki Lee de sintaxe básica">
+    <p>A imagem abaixo tem largura de 400 pixeis. A altura é definida automaticamente, calculada para manter a proporção real da imagem sem causar distorções.</p>
+    <p>Basicamente são fornecidos dois atributos:
+        <ul>
+            <li>Atributo 'src': define o caminho do arquivo de imagem que será exibido na página.</li>
+            <li>Atributo 'alt': fornece uma descrição da imagem que será exibida se a a imagem não puder ser carregada.</li>
+        </ul>
+    </p>
+    <h2>Definindo a Largura e Altura da Imagem</h2>
+    <img id="img2" src="imagens/fotografia-cachorro-loki-500.jpg" alt="Imagem do cachorro Loki Lee com ajuste de largura e altura">
+    <h2>Imagens Responsivas</h2>
+    <div id="meu-container">
+        <p>Para garantir que sua imagem se ajuste a diferentes tamanhos de tela (como desktops, tablets e smartphones), é recomendável usar CSS para definir uma imagem responsiva.</p>
+        <img id="cachorro-loki" src="imagens/fotografia-cachorro-loki-500.jpg" alt="Foto do cachorro Loki">
+        <p>Com isso, a imagem se adaptará ao tamanho da tela, sendo redimensionada de forma fluida para diferentes dispositivos.</p>
+    </div>
+    <h2>Imagens de Diferentes Fontes</h2>
+    <p>As imagens podem ser carregadas de várias fontes, tanto locais quanto externas:</p>
+    <h3>Imagem Local</h3>
+    <p>A seguir, temos um exemplo  de imagem local. Esta imagem está armazenada localmente no mesmo diretório do documento HTML.</p>
+    <img id="img3" src="imagens/fotografia-cachorro-loki-500.jpg" alt="Exemplo de imagem local">
+    <h3>Imagem Externa</h3>
+    <p>A seguir, temos um exemplo de imagem externa. Esta imagem está armazenada em um servidor online e é obtida a partir de uma url.</p>
+    <img id="img4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqiTmgQGuFDWQLPC14-zkez9UvU9U7tV19IA&s" alt="">
+    <h2>Imagens como Links</h2>
+    <p>Neste tópico, temos um exemplo do uso de imagens como links</p>
+    <a href="pag2_img1.html">
+        <img src="imagens/fotografia-cachorro-loki-500.jpg" alt="imagem contendo link para visualizar a imagem em uma nova aba">
+    </a>
+</body>
+</html>

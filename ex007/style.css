@@ -1,0 +1,21 @@
+img#cachorro-loki {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+img#img2 {
+    width: 400px;
+}
+img#img4 {
+    width: 500px;
+}
+
+div#meu-container {
+    background-color: rgb(146, 97, 20);
+    padding: 20px;
+    border: 2px solid;
+    /* margin: 0 auto; */
+    max-width: 600px; 
+}
