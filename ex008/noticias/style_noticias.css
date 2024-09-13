@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(243, 227, 207);
+}
+figure {
+    margin: 0 auto;
+    text-align: center;
+}
+img#imagem {
+    max-width: 100%;
+}
+figcaption {
+    font-size: 12px;
+    margin-top: 8px;
+}
+article#div-container {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 700px;
+    border: 2px solid;
+}
+#footer {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.376);
+    margin-top: 50px;
+}

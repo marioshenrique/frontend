@@ -4,31 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acidente de caminhão na BR-101 mata três e deixa dois feridos</title>
-    <style>
-        body {
-            background-color: rgb(243, 227, 207);
-        }
-        figure {
-            margin: 0 auto;
-            text-align: center;
-        }
-        img#imagem-acidente {
-            max-width: 100%;
-        }
-        figcaption {
-            font-size: 12px;
-            margin-top: 8px;
-        }
-        div#div-container {
-            padding: 20px;
-            margin: 0 auto;
-            max-width: 700px;
-            border: 2px solid;
-        }
-    </style>
+    <link rel="stylesheet" href="../../style_noticias.css">
 </head>
 <body>
-    <div id="div-container">
+    <header>
+        <h1>Jornal Polêmico União - Trânsito</h1>
+    </header>
+    <article id="div-container">
         <h1>Acidente de caminhão na BR-101 mata três e deixa dois feridos</h1>
         <p>Na madrugada desta quinta-feira (12), um grave acidente envolvendo um caminhão e dois carros de passeio na BR-101, próximo ao quilômetro 245, resultou na morte de três pessoas e deixou outras duas gravemente feridas. Segundo a Polícia Rodoviária Federal (PRF), o acidente ocorreu por volta das 3h, quando o caminhão, carregado de produtos químicos, perdeu o controle em uma curva, colidindo frontalmente com os veículos que seguiam na direção contrária.</p>
         <p>As vítimas fatais foram identificadas como ocupantes dos dois carros de passeio. Os dois feridos, que estavam no caminhão, foram resgatados pelos bombeiros e encaminhados ao Hospital Regional de Tubarão em estado grave. O motorista do caminhão, que sobreviveu ao impacto, passou por cirurgia e segue em observação.</p>
@@ -36,18 +18,12 @@
         <p>A causa do acidente ainda está sendo investigada, mas testemunhas afirmam que o motorista do caminhão estaria em alta velocidade no momento da colisão. A perícia técnica foi acionada e deve apresentar um laudo conclusivo nos próximos dias.</p>
         <p>O tráfego na BR-101 foi totalmente liberado por volta das 9h, e as autoridades reforçam o pedido de atenção redobrada aos motoristas que trafegam pela região, especialmente devido ao alto número de curvas acentuadas e histórico de acidentes no trecho.</p>
         <figure>
-            <img id="imagem-acidente" src="img-noticia-1.jpg" alt="Imagem ilustrativa de um acidente.">
+            <img id="imagem" src="img-noticia-1.jpg" alt="Imagem ilustrativa de um acidente.">
             <figcaption>Imagem ilustrativa de um acidente de trânsito.</figcaption>
         </figure>
         <button id="btn-voltarpaginainicial">Voltar à página inicial</button>
-    </div>
-    <script>
-        function voltarPagInicial() {
-            window.location.href = "../index.html"
-        }
-        let btn = document.getElementById("btn-voltarpaginainicial")
-        btn.addEventListener("click", voltarPagInicial)
-
-    </script>
+    </article>
+    <script src="../../../script.js"></script>
+    <footer id="footer">&copy; Desenvolvido por Mario Henrique. Todos os direitos reservados.</footer>
 </body>
 </html>
