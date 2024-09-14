@@ -1,0 +1,12 @@
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(54, 54, 61);
+}
+
+nav a:hover {
+    color: blue;
+}
