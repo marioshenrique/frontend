@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Responsivo</title>
+    <style>
+    img#imagem-resp-1 {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    picture#picture1 img{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    picture#picture2 img{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>A imagem abaixo varia conforme o tamanho da tela do usuário.</p>
+    <h2>Imagem Dinâmica com Uso de 'srcset' e 'sizes'</h2>
+    <img id="imagem-resp-1" src="imagens/imagem-1024.png" 
+    srcset="imagens/imagem-320.png 320w, 
+    imagens/imagem-360.png 360w, 
+    imagens/imagem-414.png 414w, 
+    imagens/imagem-600.png 600w, 
+    imagens/imagem-768.png 768w, 
+    imagens/imagem-1024.png 1024w, 
+    imagens/imagem-1280.png 1280w, 
+    imagens/imagem-1366.png 1366w"
+    alt="imagem dinâmica com uso de 'srcset' e 'sizes'">
+    <h2>Imagem Dinâmica com Uso de 'picture'</h2>
+    <picture id="picture1">
+        <source media="(max-width: 330px)" srcset="imagens/imagem-320.png">
+        <source media="(max-width: 424px)" srcset="imagens/imagem-414.png">
+        <source media="(max-width: 610px)" srcset="imagens/imagem-600.png">
+        <source media="(max-width: 778px)" srcset="imagens/imagem-768.png">
+        <source media="(max-width: 1034px)" srcset="imagens/imagem-1024.png">
+        <source media="(max-width: 1290px)" srcset="imagens/imagem-1280.png">
+        <source media="(max-width: 1376px)" srcset="imagens/imagem-1366.png">
+        <img src="imagens/imagem-1366.png" alt="Imagem dinâmica com uso de picture">
+    </picture>
+    <h2>Imagem Dinâmica com Uso de 'picture' e 'srcset'</h2>
+    <picture id="picture2">
+        <source media="(max-width: 600px)" 
+        srcset="imagens/imagem-320.png 320w,
+        imagens/imagem-360.png 360w,
+        imagens/imagem-414.png 414w,
+        imagens/imagem-600.png 600w"
+        >
+        <source media="(max-width: 1300px)" 
+        srcset="imagens/imagem-768.png 768w,
+        imagens/imagem-1024.png 1024w,
+        imagens/imagem-1280.png 1280w">
+        <img src="imagens/imagem-1366.png" alt="Imagem dinâmica com uso de picture e srcset">
+    </picture>
+    <h1>Inserção de Áudio</h1>
+    <p>A seguir, iremos trabalhar com arquivos de áudio em HTML5</p>
+    <h2>Áudio 1</h2>
+    <p>Você pode baixar o arquivo <a href="midias/Drop and Roll - Silent Partner.mp3" download="midias/Drop and Roll - Silent Partner.mp3">clicando aqui</a></p>
+    <audio controls preload="metadata">
+        <source src="midias/Drop and Roll - Silent Partner.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta a reprodução de áudio. Você pode baixar o áudio <a href="midias/Drop and Roll - Silent Partner.mp3" download="midias/Drop and Roll - Silent Partner.mp3">clicando aqui</a></p>
+    </audio>
+    <h2>Áudio 2</h2>
+    <p>Você pode baixar o arquivo <a href="midias/Islabonita - An Jone.mp3" download="midias/Islabonita - An Jone.mp3">clicando aqui</a></p>
+    <audio controls preload="metadata">
+        <source src="midias/Islabonita - An Jone.mp3" type="">
+        <p>Seu navegador não suporta a reprodução de áudio, Você pode baixar o áudio <a href="midias/Islabonita - An Jone.mp3" download="midias/Islabonita - An Jone.mp3">clicando aqui</a></p>
+    </audio>
+</body>
+</html>
